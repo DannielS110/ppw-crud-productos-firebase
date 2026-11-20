@@ -1,0 +1,52 @@
+.tarjeta {
+  background: #fff;
+  border: 1px solid #dde3ea;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+}
+h2 { margin: 0 0 1rem; font-size: 1.15rem; }
+
+.campos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+label { display: flex; flex-direction: column; gap: 0.3rem; font-weight: 600; font-size: 0.9rem; }
+input {
+  font: inherit; font-weight: 400;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid #b8c2cc; border-radius: 6px;
+}
+input.ng-invalid.ng-touched { border-color: #c0392b; }
+.msg-error { color: #c0392b; font-weight: 400; }
+
+.acciones { margin-top: 1rem; display: flex; gap: 0.5rem; }
+button {
+  font: inherit; cursor: pointer;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid #b8c2cc; border-radius: 6px; background: #f5f7f9;
+}
+button:disabled { opacity: 0.6; cursor: default; }
+button.primario { background: #1f4e8c; border-color: #1f4e8c; color: #fff; }
+button.peligro { background: #fff; border-color: #c0392b; color: #c0392b; }
+
+.alerta {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 0.7rem 1rem; border-radius: 8px; margin-bottom: 1rem;
+}
+.alerta-error { background: #fdecea; color: #8e2a1f; border: 1px solid #f3b8b0; }
+.alerta-ok { background: #e8f5ec; color: #1d5e33; border: 1px solid #b3dcc0; }
+.cerrar { border: none; background: transparent; font-size: 1.2rem; padding: 0 0.3rem; }
+
+.cabecera-tabla { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
+.cabecera-tabla h2 { margin: 0; }
+.tabla-scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+th, td { padding: 0.55rem 0.6rem; border-bottom: 1px solid #e6eaef; text-align: left; }
+th { background: #f0f3f7; }
+.num { text-align: right; }
+.id { font-family: monospace; font-size: 0.8rem; color: #5b6673; }
+tr.seleccionado { background: #fff7d6; }
+.acciones-fila { display: flex; gap: 0.4rem; }
+.vacio { color: #5b6673; margin: 0.5rem 0; }

@@ -1,0 +1,16 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Práctica académica: lectura y escritura abiertas solo para la colección "productos",
+    // validando el modelo en el servidor. Todo lo demás queda bloqueado.
+    match /productos/{id} {
+      allow read: if true;
+      allow delete: if true;
+      allow create, update: if request.resource.data.keys().hasOnly(['nombre', 'precio', 'stock', 'categoria'])
+        && request.resource.data.nombre is string && request.resource.data.nombre.size() > 0
+        && request.resource.data.categoria is string && request.resource.data.categoria.size() > 0
+        && request.resource.data.precio is number && request.resource.data.precio >= 0
+        && request.resource.data.stock is int && request.resource.data.stock >= 0;
+    }
+  }
+}
