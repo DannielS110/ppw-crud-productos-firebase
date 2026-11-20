@@ -2,11 +2,8 @@
   <img src="docs/img/portada.svg" alt="Gestión de Productos - CRUD con Angular y Cloud Firestore" width="100%">
 </p>
 
-<p align="center">
-  <a href="https://ppw-crud-productos-firebase.vercel.app"><b>Abrir la aplicación</b></a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/DannielS110/ppw-crud-productos-firebase"><b>Ver el código</b></a>
-</p>
+**URL pública (Vercel):** https://ppw-crud-productos-firebase.vercel.app  
+**Repositorio:** https://github.com/DannielS110/ppw-crud-productos-firebase
 
 ---
 
