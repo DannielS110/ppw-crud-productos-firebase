@@ -4,7 +4,8 @@ Práctica 02.2 de **Programación y Plataformas Web** (Universidad Politécnica 
 
 Aplicación web en Angular que administra la colección `productos` de **Cloud Firestore**: permite registrar, consultar, editar y eliminar productos desde un formulario validado y una tabla que se actualiza después de cada operación.
 
-**URL pública (Vercel):** https://TU-PROYECTO.vercel.app
+**URL pública (Vercel):** https://ppw-crud-productos-firebase.vercel.app  
+**Repositorio:** https://github.com/DannielS110/ppw-crud-productos-firebase
 
 ## Funciones del CRUD
 
@@ -60,8 +61,8 @@ Las credenciales de Firebase **no están en el repositorio**: `scripts/set-env.m
 Requisitos: Node.js 20 o superior.
 
 ```bash
-git clone https://github.com/TU-USUARIO/TU-REPO.git
-cd TU-REPO
+git clone https://github.com/DannielS110/ppw-crud-productos-firebase.git
+cd ppw-crud-productos-firebase
 npm install
 cp .env.example .env      # en Windows: copy .env.example .env
 ```
